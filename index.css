@@ -1,0 +1,131 @@
+/*primeiras propriedades */
+* {
+    /* define a área de margem nos quatro lados do elemento */
+    margin: 0;
+    /* define entre o conteúdo de um elemento e duas bordas */
+    padding: 0;
+     /* para configurar uma ou mais propriedades de contorno */
+     outline: 0;
+}
+
+body {
+    /* definiçãoo da nossa fonte do body */
+    font-family: 'Roboto' sans-serif ;
+    margin: 0;
+}
+
+li {
+    /* retirando as bolinhas da nossa lista */
+    list-style: none;
+}
+
+.header-Menu{
+    /* //torna o nosso elemneto um flexcontainer automaticamente transformando todos os seus filhos direto em flex itens */
+    display: flex ;
+    position: fixed; /*deixa o nosso header fixo */
+    width: 100%; /* largura */
+    padding: 8px; /* espaçamento dos quatros lados */
+    padding-bottom: 32px; /* espaçamento inferior */
+    padding-top: 32px; /* espaçamento superior */
+    height: 60px; /* altura */
+    background-color: #724796;
+}
+
+.header-Menu nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.lista-Menu {
+    display: flex;
+    justify-content: space-evenly; /* espaçamento entre eles seja igual */
+    width: 50%;
+    align-items: center;
+}
+
+/*Pegando os itens com as tags de dentro da nossa lista*/
+.lista-Menu li>a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: inherit;
+}
+
+.principal{
+    height: 100vh;
+    display: flex;
+    background-color: #eaeaea;
+}
+
+/* O container é um componente de  Bootstrap que garante que o seu layout vai ficar alinhado corretamente na página.
+Ele pode definir as margens laterais da página, ou deixar sem margens e , também, posiciona o conteúdo no
+centro do browser.O container é invisível. */
+
+.container{
+    margin-right: auto; /* uma margem automática para todos os lados */
+    margin-left: auto; /* uma margem automática para todos os lados */
+    max-width: 960px; /* largura maxima */
+    padding-right: 10px; /* espaçamento direito */
+    padding-left: 10px; /* espaçamento esquerdo */
+    width: 100%; /* largura */
+}
+
+.subcontainer-Principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.topico-principal{
+    font-size: 36px;
+    color: #ff4dbc;
+    
+
+}
+.lista-item{
+    padding: 32px; /* espaçamento dos quatros lados */
+}
+.lista ul li{
+    margin-bottom: 32px; /* espaçamento entre os itens da nossa lista */
+}
+
+.lista-título{
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: #661e4b;
+    font-weight: 700;
+}
+.subtitulo-lista{
+    font-size: 18px;
+    color: #907171;
+    font-weight: 500;
+}
+
+.footer{
+    background-color:#724796;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+}
+
+.lista-footer li{
+    color: #ffff;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.nome-completo{
+    font-size: 36px;
+    color: #ff4dbc;
+    font-weight: 700; /* espessura */
+    height: 45px; 
+}
+    .texto-sobre {
+        font-size: 20px;
+        line-height: 32px; /* espaçamento entre as linhas */
+}
+
+
